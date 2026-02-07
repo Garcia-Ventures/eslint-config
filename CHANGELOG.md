@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.5](https://github.com/Garcia-Ventures/eslint-config/compare/eslint-config-v0.1.4...eslint-config-v0.1.5) (2026-02-07)
+
+
+### Bug Fixes
+
+* Remove explicit `NPM_TOKEN` environment variable from the npm publish step. ([b924c15](https://github.com/Garcia-Ventures/eslint-config/commit/b924c153b36c664bfa8870d21481880de44d6228))
+
 ## [0.1.4](https://github.com/Garcia-Ventures/eslint-config/compare/eslint-config-v0.1.3...eslint-config-v0.1.4) (2026-02-07)
 
 
