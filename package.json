@@ -41,33 +41,33 @@
     "node": ">=20.19.0"
   },
   "peerDependencies": {
-    "@eng618/prettier-config": "^1.0.0",
+    "@eng618/prettier-config": "^2.0.0",
     "@eslint/js": "^9.0.0",
     "@next/eslint-plugin-next": "^15.0.0 || ^16.0.0",
     "eslint": "^9.0.0",
     "eslint-config-prettier": "^9.0.0 || ^10.0.0",
     "eslint-plugin-prettier": "^5.0.0",
-    "globals": "^15.0.0 || ^16.0.0",
+    "globals": ">=15.0.0",
     "typescript": ">=5.0.0",
     "typescript-eslint": "^8.0.0"
   },
   "peerDependenciesMeta": {
-    "typescript-eslint": {
-      "optional": true
-    },
-    "typescript": {
+    "@eng618/prettier-config": {
       "optional": true
     },
     "@next/eslint-plugin-next": {
       "optional": true
     },
-    "eslint-plugin-prettier": {
-      "optional": true
-    },
     "eslint-config-prettier": {
       "optional": true
     },
-    "@eng618/prettier-config": {
+    "eslint-plugin-prettier": {
+      "optional": true
+    },
+    "typescript": {
+      "optional": true
+    },
+    "typescript-eslint": {
       "optional": true
     }
   },
@@ -78,9 +78,10 @@
     "eslint": "^9.0.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.0",
-    "globals": "^15.0.0",
+    "globals": "^17.3.0",
     "typescript": "^5.7.0",
     "typescript-eslint": "^8.0.0"
   },
-  "prettier": "@eng618/prettier-config"
+  "prettier": "@eng618/prettier-config",
+  "packageManager": "yarn@4.12.0"
 }

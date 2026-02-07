@@ -92,3 +92,12 @@ sketch
 
 #Ignore vscode AI rules
 .github/instructions/codacy.instructions.md
+
+# yarn
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
