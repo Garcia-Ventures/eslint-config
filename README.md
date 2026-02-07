@@ -1,46 +1,133 @@
-# template
+# @gv-tech/eslint-config
 
-A base template for creating new GitHub Repos
+Shareable ESLint configuration for Garcia Ventures projects. Uses **ESLint v9** flat config format (forward-compatible with v10).
 
-## Overview
+## Features
 
-This is a template repository designed to provide a solid foundation for new GitHub projects. It includes standard documentation structure, branching guidelines, security policies, and GitHub configuration files.
+- 🚀 **ESLint v9+ Flat Config** - Modern configuration format
+- 📦 **Modular** - Use only what you need
+- 🔷 **TypeScript** - First-class TypeScript support via typescript-eslint v8
+- ⚛️ **Next.js** - Next.js 15+ with Core Web Vitals
+- 💅 **Prettier** - Integrated formatting as ESLint rules
 
-## Documentation
+## Requirements
 
-Comprehensive documentation is available in the [`docs`](docs/) directory:
+- Node.js >= 20.19.0
+- ESLint >= 9.0.0
 
-- **[Documentation Overview](docs/README.md)** - Introduction to the documentation structure
-- **[Branching Strategy](docs/BRANCHING.md)** - Git workflow and branching standards
-- **[Contributing Guide](docs/CONTRIBUTING.md)** - How to contribute to this project
+## Installation
 
-## Quick Start
+```bash
+npm install --save-dev @gv-tech/eslint-config eslint
+```
 
-1. **Use this template** - Click the "Use this template" button at the top of the repository
-2. **Clone your new repository**
-   ```bash
-   git clone https://github.com/YOUR-USERNAME/your-new-repo.git
-   cd your-new-repo
-   ```
-3. **Read the documentation** - Check out the [docs](docs/) directory to understand the project structure and workflow
+### With TypeScript
 
-## Branching Model
+```bash
+npm install --save-dev @gv-tech/eslint-config eslint typescript-eslint typescript
+```
 
-This repository follows a two-branch strategy:
+### With Next.js
 
-- **`main`** - Production-ready code, always deployable
-- **`develop`** - Integration branch for development and staging
+```bash
+npm install --save-dev @gv-tech/eslint-config eslint typescript-eslint typescript @next/eslint-plugin-next
+```
 
-For detailed information, see [BRANCHING.md](docs/BRANCHING.md).
+### With Prettier
 
-## Contributing
+```bash
+npm install --save-dev @gv-tech/eslint-config eslint eslint-plugin-prettier eslint-config-prettier @eng618/prettier-config
+```
 
-We welcome contributions! Please read our [Contributing Guide](docs/CONTRIBUTING.md) for details on our development process, code standards, and how to submit pull requests.
+> **Note:** Add `"prettier": "@eng618/prettier-config"` to your `package.json` to use the shared Prettier config.
 
-## Security
+## Usage
 
-Please refer to our [Security Policy](SECURITY.md) for information on reporting security vulnerabilities.
+Create an `eslint.config.mjs` file in your project root:
+
+### Basic JavaScript
+
+```js
+import { base } from '@gv-tech/eslint-config';
+
+export default [...base];
+```
+
+### TypeScript Project
+
+```js
+import { typescript, prettier } from '@gv-tech/eslint-config';
+
+export default [...typescript, ...prettier];
+```
+
+### Next.js Project
+
+```js
+import { next, prettier } from '@gv-tech/eslint-config';
+
+export default [...next, ...prettier];
+```
+
+### Using Presets
+
+For convenience, pre-combined presets are available:
+
+```js
+// TypeScript + Prettier (recommended)
+import { recommended } from '@gv-tech/eslint-config';
+export default [...recommended];
+
+// Next.js + TypeScript + Prettier
+import { nextjs } from '@gv-tech/eslint-config';
+export default [...nextjs];
+```
+
+### Custom Configuration
+
+Extend and customize as needed:
+
+```js
+import { typescript, prettier } from '@gv-tech/eslint-config';
+
+export default [
+  ...typescript,
+  ...prettier,
+  {
+    // Add project-specific ignores
+    ignores: ['custom-folder/**'],
+  },
+  {
+    // Override rules
+    files: ['**/*.ts'],
+    rules: {
+      '@typescript-eslint/no-unused-vars': 'warn',
+    },
+  },
+];
+```
+
+## Available Configurations
+
+| Export | Description |
+|--------|-------------|
+| `base` | Core JavaScript rules |
+| `typescript` | TypeScript support (includes base) |
+| `next` | Next.js 16+ (includes TypeScript) |
+| `prettier` | Prettier formatting integration |
+| `recommended` | TypeScript + Prettier |
+| `nextjs` | Next.js + Prettier |
+
+## Exported Utilities
+
+| Export | Description |
+|--------|-------------|
+| `jsFiles` | JavaScript file patterns |
+| `tsFiles` | TypeScript file patterns |
+| `allJsTsFiles` | All JS/TS file patterns |
+| `commonIgnores` | Common ignore patterns |
+| `nextIgnores` | Next.js-specific ignores |
 
 ## License
 
-This project is licensed under the terms specified in the [LICENSE](LICENSE) file.
+MIT
