@@ -17,10 +17,10 @@ updates:
   #     interval: "monthly"
 
   # Enable version updates for npm
-  # - package-ecosystem: "npm"
-  #   directory: "/"
-  #   schedule:
-  #     interval: "monthly"
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "monthly"
 
   # Enable version updates for Docker
   # - package-ecosystem: "docker"
