@@ -1,8 +1,7 @@
 /**
  * @gv-tech/eslint-config - TypeScript Configuration
  *
- * TypeScript-specific ESLint configuration using typescript-eslint v8.
- * Uses ESLint v9 flat config format.
+ * TypeScript-specific ESLint configuration using typescript-eslint v8. Uses ESLint v9 flat config format.
  */
 
 import tseslint from 'typescript-eslint';
@@ -15,10 +14,10 @@ export const tsFiles = ['**/*.ts', '**/*.tsx', '**/*.mts', '**/*.cts'];
 export const allJsTsFiles = [...jsFiles, ...tsFiles];
 
 /**
- * TypeScript ESLint configuration.
- * Extends base configuration and adds TypeScript-specific rules.
+ * TypeScript ESLint configuration. Extends base configuration and adds TypeScript-specific rules.
  *
  * @example
+ *
  * ```js
  * // eslint.config.mjs
  * import { typescript } from '@gv-tech/eslint-config';

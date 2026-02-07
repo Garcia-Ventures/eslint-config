@@ -1,8 +1,7 @@
 /**
  * @gv-tech/eslint-config - Next.js Configuration
  *
- * Next.js 15+ ESLint configuration with Core Web Vitals.
- * Uses ESLint v9 flat config format.
+ * Next.js 15+ ESLint configuration with Core Web Vitals. Uses ESLint v9 flat config format.
  */
 
 import nextPlugin from '@next/eslint-plugin-next';
@@ -13,10 +12,10 @@ import { allJsTsFiles, typescript } from './typescript.mjs';
 export const nextIgnores = [...commonIgnores, '.next/**', 'out/**', 'next-env.d.ts'];
 
 /**
- * Next.js ESLint configuration.
- * Extends TypeScript configuration and adds Next.js-specific rules.
+ * Next.js ESLint configuration. Extends TypeScript configuration and adds Next.js-specific rules.
  *
  * @example
+ *
  * ```js
  * // eslint.config.mjs
  * import { next } from '@gv-tech/eslint-config';

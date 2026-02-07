@@ -2,6 +2,26 @@
   "name": "@gv-tech/eslint-config",
   "version": "0.1.2",
   "description": "Shareable ESLint configuration for Garcia Ventures projects - ESLint v9 flat config",
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "eslint-config",
+    "flat-config",
+    "eslint-v10",
+    "typescript",
+    "nextjs",
+    "prettier"
+  ],
+  "homepage": "https://github.com/Garcia-Ventures/eslint-config#readme",
+  "bugs": {
+    "url": "https://github.com/Garcia-Ventures/eslint-config/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Garcia-Ventures/eslint-config.git"
+  },
+  "license": "MIT",
+  "author": "Eric N. Garcia <eng618@garciaericn.com>",
   "type": "module",
   "exports": {
     ".": "./src/index.mjs",
@@ -21,31 +41,18 @@
     "lint:report": "eslint . --cache -o ./eslintReport.html -f html",
     "prepare": "husky"
   },
-  "keywords": [
-    "eslint",
-    "eslintconfig",
-    "eslint-config",
-    "flat-config",
-    "eslint-v10",
-    "typescript",
-    "nextjs",
-    "prettier"
-  ],
-  "homepage": "https://github.com/Garcia-Ventures/eslint-config#readme",
-  "bugs": {
-    "url": "https://github.com/Garcia-Ventures/eslint-config/issues"
+  "lint-staged": {
+    "*.(js|ts|mjs|cjs)?(x)": [
+      "prettier --write",
+      "eslint --cache --fix"
+    ],
+    "*.(md)?(x)": [
+      "prettier --write"
+    ]
   },
-  "license": "MIT",
-  "author": "Eric N. Garcia <eng618@garciaericn.com>",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Garcia-Ventures/eslint-config.git"
-  },
-  "engines": {
-    "node": ">=20.19.0"
-  },
+  "prettier": "@eng618/prettier-config",
   "devDependencies": {
-    "@eng618/prettier-config": "^2.5.3",
+    "@eng618/prettier-config": "^2.6.0",
     "@eslint/js": "^10.0.1",
     "@gv-tech/eslint-config": "^0.1.0",
     "@next/eslint-plugin-next": "^16.1.6",
@@ -56,7 +63,6 @@
     "husky": "^9.1.7",
     "lint-staged": "^16.2.7",
     "prettier": "^3.8.1",
-    "prettier-plugin-organize-imports": "^4.3.0",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.54.0"
   },
@@ -69,7 +75,6 @@
     "eslint-plugin-prettier": "^5.0.0",
     "globals": ">=15.0.0",
     "prettier": "^3.0.0",
-    "prettier-plugin-organize-imports": "^4.0.0",
     "typescript": ">=5.0.0",
     "typescript-eslint": "^8.0.0"
   },
@@ -89,9 +94,6 @@
     "prettier": {
       "optional": true
     },
-    "prettier-plugin-organize-imports": {
-      "optional": true
-    },
     "typescript": {
       "optional": true
     },
@@ -99,15 +101,8 @@
       "optional": true
     }
   },
-  "lint-staged": {
-    "*.(js|ts|mjs|cjs)?(x)": [
-      "prettier --write",
-      "eslint --cache --fix"
-    ],
-    "*.(md)?(x)": [
-      "prettier --write"
-    ]
-  },
-  "prettier": "@eng618/prettier-config",
-  "packageManager": "yarn@4.12.0"
+  "packageManager": "yarn@4.12.0",
+  "engines": {
+    "node": ">=20.19.0"
+  }
 }

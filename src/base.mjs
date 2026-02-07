@@ -1,8 +1,7 @@
 /**
  * @gv-tech/eslint-config - Base Configuration
  *
- * Core ESLint configuration with recommended JavaScript rules.
- * Uses ESLint v10 flat config format.
+ * Core ESLint configuration with recommended JavaScript rules. Uses ESLint v10 flat config format.
  */
 
 import js from '@eslint/js';
@@ -18,6 +17,7 @@ export const commonIgnores = ['**/node_modules/**', '**/dist/**', '**/build/**',
  * Base ESLint configuration for JavaScript projects.
  *
  * @example
+ *
  * ```js
  * // eslint.config.mjs
  * import { base } from '@gv-tech/eslint-config';
