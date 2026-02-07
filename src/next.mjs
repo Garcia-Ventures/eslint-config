@@ -6,16 +6,11 @@
  */
 
 import nextPlugin from '@next/eslint-plugin-next';
-import { typescript, allJsTsFiles } from './typescript.mjs';
 import { commonIgnores } from './base.mjs';
+import { allJsTsFiles, typescript } from './typescript.mjs';
 
 /** Next.js specific ignore patterns */
-export const nextIgnores = [
-  ...commonIgnores,
-  '.next/**',
-  'out/**',
-  'next-env.d.ts',
-];
+export const nextIgnores = [...commonIgnores, '.next/**', 'out/**', 'next-env.d.ts'];
 
 /**
  * Next.js ESLint configuration.
