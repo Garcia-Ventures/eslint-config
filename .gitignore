@@ -101,3 +101,7 @@ sketch
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
+# Ignore eslint report
+eslintReport.html
+.eslintcache

@@ -109,24 +109,24 @@ export default [
 
 ## Available Configurations
 
-| Export | Description |
-|--------|-------------|
-| `base` | Core JavaScript rules |
-| `typescript` | TypeScript support (includes base) |
-| `next` | Next.js 16+ (includes TypeScript) |
-| `prettier` | Prettier formatting integration |
-| `recommended` | TypeScript + Prettier |
-| `nextjs` | Next.js + Prettier |
+| Export        | Description                        |
+| ------------- | ---------------------------------- |
+| `base`        | Core JavaScript rules              |
+| `typescript`  | TypeScript support (includes base) |
+| `next`        | Next.js 16+ (includes TypeScript)  |
+| `prettier`    | Prettier formatting integration    |
+| `recommended` | TypeScript + Prettier              |
+| `nextjs`      | Next.js + Prettier                 |
 
 ## Exported Utilities
 
-| Export | Description |
-|--------|-------------|
-| `jsFiles` | JavaScript file patterns |
-| `tsFiles` | TypeScript file patterns |
-| `allJsTsFiles` | All JS/TS file patterns |
-| `commonIgnores` | Common ignore patterns |
-| `nextIgnores` | Next.js-specific ignores |
+| Export          | Description              |
+| --------------- | ------------------------ |
+| `jsFiles`       | JavaScript file patterns |
+| `tsFiles`       | TypeScript file patterns |
+| `allJsTsFiles`  | All JS/TS file patterns  |
+| `commonIgnores` | Common ignore patterns   |
+| `nextIgnores`   | Next.js-specific ignores |
 
 ## License
 
