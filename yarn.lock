@@ -5,10 +5,13 @@ __metadata:
   version: 8
   cacheKey: 10c0
 
-"@eng618/prettier-config@npm:^1.8.0":
-  version: 1.8.0
-  resolution: "@eng618/prettier-config@npm:1.8.0"
-  checksum: 10c0/23dc0be04a2f6d096030187a6ea7e5d982cdb05da682695d787d2e4067be1fcf6cc6e6464d2d8f93d5a9befb3f0fa3e505aeacbfa91e55dbe0123677d11fa32e
+"@eng618/prettier-config@npm:^2.5.3":
+  version: 2.5.3
+  resolution: "@eng618/prettier-config@npm:2.5.3"
+  peerDependencies:
+    prettier: ^2.0.0 || ^3.0.0
+    prettier-plugin-organize-imports: ^4.0.0
+  checksum: 10c0/89955b2d2f0ad5c16d0fd3e8b97e5d30766b4fa943d370c31abf897e4eea0ab475fb5852dc2904e569c22df50d22d20ecabb6560a1529caa087f72bcbbe7d1e7
   languageName: node
   linkType: hard
 
@@ -104,7 +107,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@gv-tech/eslint-config@workspace:."
   dependencies:
-    "@eng618/prettier-config": "npm:^1.8.0"
+    "@eng618/prettier-config": "npm:^2.5.3"
     "@eslint/js": "npm:^9.0.0"
     "@next/eslint-plugin-next": "npm:^16.1.6"
     eslint: "npm:^9.0.0"
