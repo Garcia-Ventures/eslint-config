@@ -126,6 +126,8 @@ __metadata:
     eslint-config-prettier: ^9.0.0 || ^10.0.0
     eslint-plugin-prettier: ^5.0.0
     globals: ">=15.0.0"
+    prettier: ^3.0.0
+    prettier-plugin-organize-imports: ^4.0.0
     typescript: ">=5.0.0"
     typescript-eslint: ^8.0.0
   peerDependenciesMeta:
@@ -136,6 +138,10 @@ __metadata:
     eslint-config-prettier:
       optional: true
     eslint-plugin-prettier:
+      optional: true
+    prettier:
+      optional: true
+    prettier-plugin-organize-imports:
       optional: true
     typescript:
       optional: true
