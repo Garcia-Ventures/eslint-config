@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.4](https://github.com/Garcia-Ventures/eslint-config/compare/eslint-config-v0.1.3...eslint-config-v0.1.4) (2026-02-07)
+
+
+### Features
+
+* Force release ([ef98c9c](https://github.com/Garcia-Ventures/eslint-config/commit/ef98c9cd541ffb3c36f8a63e6df0be2981bc2b4a))
+
 ## [0.1.3](https://github.com/Garcia-Ventures/eslint-config/compare/eslint-config-v0.1.2...eslint-config-v0.1.3) (2026-02-07)
 
 
