@@ -62,6 +62,7 @@
     }
   },
   "separate-pull-requests": false,
+  "pull-request-title-pattern": "chore: release v${version}",
   "sequential-calls": true,
   "plugins": [
     {

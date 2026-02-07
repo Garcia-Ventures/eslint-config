@@ -6,8 +6,8 @@
  * Uses ESLint v9 flat config format.
  */
 
-import prettierPlugin from 'eslint-plugin-prettier';
 import prettierConfig from 'eslint-config-prettier';
+import prettierPlugin from 'eslint-plugin-prettier';
 import { allJsTsFiles } from './typescript.mjs';
 
 /**
@@ -37,7 +37,7 @@ export const prettier = [
         'error',
         {},
         {
-          usePrettierrc: true, // Will find @eng618/prettier-config via package.json or .prettierrc
+          usePrettierrc: true,
         },
       ],
     },

@@ -6,7 +6,7 @@
  */
 
 import tseslint from 'typescript-eslint';
-import { base, jsFiles, commonIgnores } from './base.mjs';
+import { base, commonIgnores, jsFiles } from './base.mjs';
 
 /** File patterns for TypeScript files */
 export const tsFiles = ['**/*.ts', '**/*.tsx', '**/*.mts', '**/*.cts'];

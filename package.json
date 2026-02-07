@@ -48,6 +48,8 @@
     "eslint-config-prettier": "^9.0.0 || ^10.0.0",
     "eslint-plugin-prettier": "^5.0.0",
     "globals": ">=15.0.0",
+    "prettier": "^3.0.0",
+    "prettier-plugin-organize-imports": "^4.0.0",
     "typescript": ">=5.0.0",
     "typescript-eslint": "^8.0.0"
   },
@@ -64,6 +66,12 @@
     "eslint-plugin-prettier": {
       "optional": true
     },
+    "prettier": {
+      "optional": true
+    },
+    "prettier-plugin-organize-imports": {
+      "optional": true
+    },
     "typescript": {
       "optional": true
     },
@@ -72,13 +80,15 @@
     }
   },
   "devDependencies": {
-    "@eng618/prettier-config": "^1.8.0",
+    "@eng618/prettier-config": "^2.5.3",
     "@eslint/js": "^9.0.0",
     "@next/eslint-plugin-next": "^16.1.6",
     "eslint": "^9.0.0",
-    "eslint-config-prettier": "^9.0.0",
-    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.5",
     "globals": "^17.3.0",
+    "prettier": "^3.8.1",
+    "prettier-plugin-organize-imports": "^4.3.0",
     "typescript": "^5.7.0",
     "typescript-eslint": "^8.0.0"
   },

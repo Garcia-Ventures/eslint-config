@@ -12,13 +12,7 @@ import globals from 'globals';
 export const jsFiles = ['**/*.js', '**/*.jsx', '**/*.mjs', '**/*.cjs'];
 
 /** Common ignore patterns */
-export const commonIgnores = [
-  '**/node_modules/**',
-  '**/dist/**',
-  '**/build/**',
-  '**/coverage/**',
-  '**/.git/**',
-];
+export const commonIgnores = ['**/node_modules/**', '**/dist/**', '**/build/**', '**/coverage/**', '**/.git/**'];
 
 /**
  * Base ESLint configuration for JavaScript projects.
