@@ -1,6 +1,6 @@
 {
   "name": "@gv-tech/eslint-config",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Shareable ESLint configuration for Garcia Ventures projects - ESLint v9 flat config",
   "keywords": [
     "eslint",
