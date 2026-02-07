@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.2](https://github.com/Garcia-Ventures/eslint-config/compare/eslint-config-v0.1.1...eslint-config-v0.1.2) (2026-02-07)
+
+
+### Features
+
+* Migrate package management from npm to Yarn. ([d2b90f3](https://github.com/Garcia-Ventures/eslint-config/commit/d2b90f3497d298e40cb25d68ee03fa4db71aa0a3))
+
 ## [0.1.1](https://github.com/Garcia-Ventures/eslint-config/compare/eslint-config-v0.1.0...eslint-config-v0.1.1) (2026-02-07)
 
 
