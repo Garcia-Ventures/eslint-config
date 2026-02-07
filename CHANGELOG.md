@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.3](https://github.com/Garcia-Ventures/eslint-config/compare/eslint-config-v0.1.2...eslint-config-v0.1.3) (2026-02-07)
+
+
+### Features
+
+* Update Prettier configuration, remove organize imports plugin, and add lint-staged setup. ([a5c41d0](https://github.com/Garcia-Ventures/eslint-config/commit/a5c41d087c348c6a26045902c9b00538d5bc7814))
+* Upgrade Node.js to v24, update ESLint dependencies, and configure pre-commit hooks. ([9013d20](https://github.com/Garcia-Ventures/eslint-config/commit/9013d20332f02de4ac54ad2fb0c0638aa3956205))
+
 ## [0.1.2](https://github.com/Garcia-Ventures/eslint-config/compare/eslint-config-v0.1.1...eslint-config-v0.1.2) (2026-02-07)
 
 
