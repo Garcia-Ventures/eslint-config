@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.8](https://github.com/Garcia-Ventures/eslint-config/compare/eslint-config-v0.1.7...eslint-config-v0.1.8) (2026-02-08)
+
+
+### Features
+
+* Add `@eng618/prettier-config` to devDependencies. ([0faccc8](https://github.com/Garcia-Ventures/eslint-config/commit/0faccc8384bbf6ad84980f9288eda793cade90ef))
+* Introduce `javascriptRecommended` configuration, move core ESLint plugins to direct dependencies, and update README installation instructions. ([d89fc18](https://github.com/Garcia-Ventures/eslint-config/commit/d89fc18565524c0658042111e5cd70a2b34a40d8))
+
 ## [0.1.7](https://github.com/Garcia-Ventures/eslint-config/compare/eslint-config-v0.1.6...eslint-config-v0.1.7) (2026-02-08)
 
 
