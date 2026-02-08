@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.6](https://github.com/Garcia-Ventures/eslint-config/compare/eslint-config-v0.1.5...eslint-config-v0.1.6) (2026-02-08)
+
+
+### Documentation
+
+* Add CI, npm version, license, and npm downloads badges to README ([b25afc9](https://github.com/Garcia-Ventures/eslint-config/commit/b25afc968b619fa46342fd018cfd3a97f861ff49))
+
 ## [0.1.5](https://github.com/Garcia-Ventures/eslint-config/compare/eslint-config-v0.1.4...eslint-config-v0.1.5) (2026-02-07)
 
 
