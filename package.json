@@ -42,7 +42,7 @@
     "prepare": "husky",
     "test": "yarn test:unit && node test/verify.mjs",
     "test:unit": "node test/unit.test.mjs",
-    "validate": "yarn lint && yarn test && publint"
+    "validate": "yarn lint && yarn test && yarn dlx publint"
   },
   "lint-staged": {
     "*.(js|ts|mjs|cjs)?(x)": [
