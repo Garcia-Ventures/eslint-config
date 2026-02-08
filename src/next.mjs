@@ -6,6 +6,7 @@
 
 import nextPlugin from '@next/eslint-plugin-next';
 import { commonIgnores } from './base.mjs';
+import { prettier } from './prettier.mjs';
 import { allJsTsFiles, typescript } from './typescript.mjs';
 
 /** Next.js specific ignore patterns */
@@ -18,7 +19,7 @@ export const nextIgnores = [...commonIgnores, '.next/**', 'out/**', 'next-env.d.
  *
  * ```js
  * // eslint.config.mjs
- * import { next } from '@gv-tech/eslint-config';
+ * import { next } from '@gv-tech/eslint-config/next';
  *
  * export default [...next];
  * ```
@@ -43,5 +44,11 @@ export const next = [
     },
   },
 ];
+
+/**
+ * Recommended configuration for Next.js projects with Prettier. Combines Next.js (which includes TypeScript) and
+ * Prettier configurations.
+ */
+export const nextjs = [...next, ...prettier];
 
 export default next;

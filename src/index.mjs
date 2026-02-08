@@ -27,21 +27,14 @@
 
 // Import for creating combined presets
 import { base, commonIgnores, jsFiles } from './base.mjs';
-import { next, nextIgnores } from './next.mjs';
 import { prettier } from './prettier.mjs';
 import { allJsTsFiles, tsFiles, typescript } from './typescript.mjs';
 
 // Re-export individual configurations
-export { allJsTsFiles, base, commonIgnores, jsFiles, next, nextIgnores, prettier, tsFiles, typescript };
+export { allJsTsFiles, base, commonIgnores, jsFiles, prettier, tsFiles, typescript };
 
 /** Recommended configuration for TypeScript projects with Prettier. Combines TypeScript and Prettier configurations. */
 export const recommended = [...typescript, ...prettier];
-
-/**
- * Recommended configuration for Next.js projects with Prettier. Combines Next.js (which includes TypeScript) and
- * Prettier configurations.
- */
-export const nextjs = [...next, ...prettier];
 
 /** Base configuration preset for simple JavaScript projects. */
 export const javascript = [...base];
