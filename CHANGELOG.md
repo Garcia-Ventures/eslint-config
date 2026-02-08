@@ -1,5 +1,19 @@
 # Changelog
 
+## [0.1.7](https://github.com/Garcia-Ventures/eslint-config/compare/eslint-config-v0.1.6...eslint-config-v0.1.7) (2026-02-08)
+
+
+### Features
+
+* Add blackbox tests for various ESLint configurations and integrate them into CI/CD workflows. ([005ebc7](https://github.com/Garcia-Ventures/eslint-config/commit/005ebc74fc40a11c4fb6eba1b3e7326dbde29d2a))
+* Dynamically import the Next.js ESLint plugin to make it optional and consolidate Next.js configurations into the main package exports. ([01cb660](https://github.com/Garcia-Ventures/eslint-config/commit/01cb660e2307e56b373a8620972991f335e8a5fd))
+* Introduce unit tests for ESLint configurations and update package scripts and CI workflow to include them. ([da749c0](https://github.com/Garcia-Ventures/eslint-config/commit/da749c02489c70ce472e8c2e926e9941c4a74326))
+
+
+### Bug Fixes
+
+* Enhance ESLint configurations to robustly handle array-based recommended configs and remove a JSDoc example. ([4d0de8e](https://github.com/Garcia-Ventures/eslint-config/commit/4d0de8e66cd01698e999eb3bcf9f01714fefa17e))
+
 ## [0.1.6](https://github.com/Garcia-Ventures/eslint-config/compare/eslint-config-v0.1.5...eslint-config-v0.1.6) (2026-02-08)
 
 
