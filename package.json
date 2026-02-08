@@ -37,10 +37,12 @@
     "format": "prettier --write .",
     "format:ci": "prettier --check .",
     "lint": "eslint . --cache",
-    "lint:fix": "eslint . --cache --fix",
+    "lint:fix": "yarn lint --fix",
     "lint:report": "eslint . --cache -o ./eslintReport.html -f html",
     "prepare": "husky",
-    "test": "node test/verify.mjs"
+    "test": "yarn test:unit && node test/verify.mjs",
+    "test:unit": "node test/unit.test.mjs",
+    "validate": "yarn lint && yarn test && publint"
   },
   "lint-staged": {
     "*.(js|ts|mjs|cjs)?(x)": [
