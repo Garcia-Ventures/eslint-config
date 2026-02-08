@@ -69,8 +69,7 @@ export default [...typescript, ...prettier];
 ### Next.js Project
 
 ```js
-import { next } from '@gv-tech/eslint-config/next';
-import { prettier } from '@gv-tech/eslint-config/prettier';
+import { next, prettier } from '@gv-tech/eslint-config';
 
 export default [...next, ...prettier];
 ```
@@ -85,7 +84,7 @@ import { recommended } from '@gv-tech/eslint-config';
 export default [...recommended];
 
 // Next.js + TypeScript + Prettier
-import { nextjs } from '@gv-tech/eslint-config/next';
+import { nextjs } from '@gv-tech/eslint-config';
 export default [...nextjs];
 ```
 
@@ -115,14 +114,14 @@ export default [
 
 ## Available Configurations
 
-| Export        | Description                                 |
-| ------------- | ------------------------------------------- |
-| `base`        | Core JavaScript rules                       |
-| `typescript`  | TypeScript support (includes base)          |
-| `next`        | Next.js rules (requires `next` import)      |
-| `prettier`    | Prettier formatting integration             |
-| `recommended` | TypeScript + Prettier                       |
-| `nextjs`      | Next.js + Prettier (requires `next` import) |
+| Export        | Description                         |
+| ------------- | ----------------------------------- |
+| `base`        | Core JavaScript rules               |
+| `typescript`  | TypeScript support (includes base)  |
+| `next`        | Next.js rules (includes TypeScript) |
+| `prettier`    | Prettier formatting integration     |
+| `recommended` | TypeScript + Prettier               |
+| `nextjs`      | Next.js + Prettier                  |
 
 ## Exported Utilities
 
