@@ -13,27 +13,22 @@ export const jsFiles = ['**/*.js', '**/*.jsx', '**/*.mjs', '**/*.cjs'];
 /** Common ignore patterns */
 export const commonIgnores = ['**/node_modules/**', '**/dist/**', '**/build/**', '**/coverage/**', '**/.git/**'];
 
-/**
- * Base ESLint configuration for JavaScript projects.
- *
- * @example
- *
- * ```js
- * // eslint.config.mjs
- * import { base } from '@gv-tech/eslint-config';
- *
- * export default [...base];
- * ```
- */
+// Helper to ensure we have an array of configs
+const ensureArray = (config) => (Array.isArray(config) ? config : [config]);
+
+/** Base ESLint configuration for JavaScript projects. */
 export const base = [
   // Global ignores
   {
     ignores: commonIgnores,
   },
-  // Base configuration for all JS files
+  // Base configuration for all JS files (properly handling array-based recommended configs)
+  ...ensureArray(js.configs.recommended).map((config) => ({
+    ...config,
+    files: jsFiles,
+  })),
   {
     files: jsFiles,
-    ...js.configs.recommended,
     languageOptions: {
       ecmaVersion: 'latest',
       sourceType: 'module',

@@ -24,7 +24,8 @@ import { allJsTsFiles } from './typescript.mjs';
  */
 export const prettier = [
   // Disable ESLint rules that conflict with Prettier
-  prettierConfig,
+  // Handle case where prettierConfig might be an array in future versions
+  ...(Array.isArray(prettierConfig) ? prettierConfig : [prettierConfig]),
   // Run Prettier as an ESLint rule with @eng618/prettier-config
   {
     files: allJsTsFiles,
