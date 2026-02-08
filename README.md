@@ -1,5 +1,10 @@
 # @gv-tech/eslint-config
 
+[![CI](https://github.com/Garcia-Ventures/eslint-config/actions/workflows/ci.yml/badge.svg)](https://github.com/Garcia-Ventures/eslint-config/actions/workflows/ci.yml)
+[![npm version](https://img.shields.io/npm/v/@gv-tech/eslint-config.svg)](https://www.npmjs.com/package/@gv-tech/eslint-config)
+[![license](https://img.shields.io/npm/l/@gv-tech/eslint-config.svg)](https://github.com/Garcia-Ventures/eslint-config/blob/main/LICENSE)
+[![npm downloads](https://img.shields.io/npm/dm/@gv-tech/eslint-config.svg)](https://www.npmjs.com/package/@gv-tech/eslint-config)
+
 Shareable ESLint configuration for Garcia Ventures projects. Uses **ESLint v9** flat config format (forward-compatible with v10).
 
 ## Features
