@@ -62,6 +62,7 @@
     "typescript-eslint": "^8.0.0"
   },
   "devDependencies": {
+    "@eng618/prettier-config": "^2.6.0",
     "@eslint/js": "^10.0.1",
     "@gv-tech/eslint-config": "^0.1.0",
     "@next/eslint-plugin-next": "^16.1.6",
