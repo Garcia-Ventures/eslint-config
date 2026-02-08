@@ -11,10 +11,16 @@ import { allJsTsFiles, typescript } from './typescript.mjs';
 // Try to load the Next.js plugin dynamically to avoid crashing if it's not installed
 let nextPlugin;
 try {
+  // Allow forcing missing state for tests
+  if (process.env.ESLINT_CONFIG_FORCE_MISSING_NEXT === 'true') {
+    throw new Error('Forced missing state for testing');
+  }
   const mod = await import('@next/eslint-plugin-next');
   nextPlugin = mod.default;
-} catch (e) {
-  console.warn("Next.js plugin not found. It's optional.", e);
+} catch {
+  if (process.env.ESLINT_CONFIG_FORCE_MISSING_NEXT !== 'true') {
+    console.warn("Next.js plugin not found. It's optional.");
+  }
 }
 
 /** Next.js specific ignore patterns */

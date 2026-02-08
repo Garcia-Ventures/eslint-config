@@ -60,3 +60,6 @@ jobs:
         run: |
           yarn pack --dry-run
           yarn dlx publint
+
+      - name: Run Blackbox Tests
+        run: yarn test

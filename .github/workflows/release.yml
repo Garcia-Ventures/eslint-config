@@ -58,5 +58,8 @@ jobs:
       - name: Install dependencies
         run: yarn install --immutable
 
+      - name: Run Blackbox Tests
+        run: yarn test
+
       - name: Publish to npm with provenance
         run: yarn npm publish --access public

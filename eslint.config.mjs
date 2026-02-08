@@ -4,6 +4,6 @@ import { recommended } from './src/index.mjs';
 export default [
   ...recommended,
   {
-    ignores: ['temp.*.mjs'],
+    ignores: ['temp.*.mjs', 'test/fixtures/**'],
   },
 ];

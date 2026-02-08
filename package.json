@@ -39,7 +39,8 @@
     "lint": "eslint . --cache",
     "lint:fix": "eslint . --cache --fix",
     "lint:report": "eslint . --cache -o ./eslintReport.html -f html",
-    "prepare": "husky"
+    "prepare": "husky",
+    "test": "node test/verify.mjs"
   },
   "lint-staged": {
     "*.(js|ts|mjs|cjs)?(x)": [
