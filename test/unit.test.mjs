@@ -103,5 +103,6 @@ test('ESLint Config - Common Ignores', async (t) => {
     const ignoreConfig = base.find((c) => c.ignores);
     assert.ok(ignoreConfig, 'base config should have an ignore block');
     assert.deepStrictEqual(ignoreConfig.ignores, exports.commonIgnores, 'base ignores should match commonIgnores');
+    assert.ok(exports.commonIgnores.includes('**/.yarn/**'), 'commonIgnores should include **/.yarn/**');
   });
 });

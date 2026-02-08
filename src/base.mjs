@@ -11,7 +11,14 @@ import globals from 'globals';
 export const jsFiles = ['**/*.js', '**/*.jsx', '**/*.mjs', '**/*.cjs'];
 
 /** Common ignore patterns */
-export const commonIgnores = ['**/node_modules/**', '**/dist/**', '**/build/**', '**/coverage/**', '**/.git/**'];
+export const commonIgnores = [
+  '**/node_modules/**',
+  '**/dist/**',
+  '**/build/**',
+  '**/coverage/**',
+  '**/.git/**',
+  '**/.yarn/**',
+];
 
 // Helper to ensure we have an array of configs
 const ensureArray = (config) => (Array.isArray(config) ? config : [config]);
