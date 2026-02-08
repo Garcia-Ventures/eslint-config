@@ -19,5 +19,8 @@ export const recommended = [...typescript, ...prettier];
 /** Base configuration preset for simple JavaScript projects. */
 export const javascript = [...base];
 
+/** Recommended configuration for JavaScript projects with Prettier. */
+export const javascriptRecommended = [...base, ...prettier];
+
 // Default export is the recommended TypeScript + Prettier config
 export default recommended;

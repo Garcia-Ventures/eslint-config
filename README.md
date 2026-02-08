@@ -22,27 +22,44 @@ Shareable ESLint configuration for Garcia Ventures projects. Uses **ESLint v9** 
 
 ## Installation
 
-```bash
-npm install --save-dev @gv-tech/eslint-config eslint
-```
+Install `@gv-tech/eslint-config` along with its required peer dependencies using your preferred package manager:
+
+| Manager  | Command                                                         |
+| :------- | :-------------------------------------------------------------- |
+| **npm**  | `npm install --save-dev @gv-tech/eslint-config eslint prettier` |
+| **yarn** | `yarn add --dev @gv-tech/eslint-config eslint prettier`         |
+| **pnpm** | `pnpm add -D @gv-tech/eslint-config eslint prettier`            |
+| **bun**  | `bun add -d @gv-tech/eslint-config eslint prettier`             |
 
 ### With TypeScript
 
-```bash
-npm install --save-dev @gv-tech/eslint-config eslint typescript-eslint typescript
-```
+If you are using TypeScript, you also need to install the `typescript` package:
+
+| Manager  | Command                             |
+| :------- | :---------------------------------- |
+| **npm**  | `npm install --save-dev typescript` |
+| **yarn** | `yarn add --dev typescript`         |
+| **pnpm** | `pnpm add -D typescript`            |
 
 ### With Next.js
 
-```bash
-npm install --save-dev @gv-tech/eslint-config eslint typescript-eslint typescript @next/eslint-plugin-next
-```
+For Next.js projects, add the Next.js ESLint plugin:
 
-### With Prettier
+| Manager  | Command                                           |
+| :------- | :------------------------------------------------ |
+| **npm**  | `npm install --save-dev @next/eslint-plugin-next` |
+| **yarn** | `yarn add --dev @next/eslint-plugin-next`         |
+| **pnpm** | `pnpm add -D @next/eslint-plugin-next`            |
 
-```bash
-npm install --save-dev @gv-tech/eslint-config eslint eslint-plugin-prettier eslint-config-prettier @eng618/prettier-config
-```
+### With Prettier (Optional Shared Config)
+
+The Prettier plugin is built-in. If you want to use the shared Garcia Ventures Prettier config:
+
+| Manager  | Command                                          |
+| :------- | :----------------------------------------------- |
+| **npm**  | `npm install --save-dev @eng618/prettier-config` |
+| **yarn** | `yarn add --dev @eng618/prettier-config`         |
+| **pnpm** | `pnpm add -D @eng618/prettier-config`            |
 
 > **Note:** Add `"prettier": "@eng618/prettier-config"` to your `package.json` to use the shared Prettier config.
 
@@ -53,9 +70,9 @@ Create an `eslint.config.mjs` file in your project root:
 ### Basic JavaScript
 
 ```js
-import { base } from '@gv-tech/eslint-config';
+import { javascriptRecommended } from '@gv-tech/eslint-config';
 
-export default [...base];
+export default [...javascriptRecommended];
 ```
 
 ### TypeScript Project
@@ -114,14 +131,15 @@ export default [
 
 ## Available Configurations
 
-| Export        | Description                         |
-| ------------- | ----------------------------------- |
-| `base`        | Core JavaScript rules               |
-| `typescript`  | TypeScript support (includes base)  |
-| `next`        | Next.js rules (includes TypeScript) |
-| `prettier`    | Prettier formatting integration     |
-| `recommended` | TypeScript + Prettier               |
-| `nextjs`      | Next.js + Prettier                  |
+| Export                  | Description                         |
+| ----------------------- | ----------------------------------- |
+| `base`                  | Core JavaScript rules               |
+| `typescript`            | TypeScript support (includes base)  |
+| `next`                  | Next.js rules (includes TypeScript) |
+| `prettier`              | Prettier formatting integration     |
+| `recommended`           | TypeScript + Prettier               |
+| `javascriptRecommended` | JavaScript + Prettier               |
+| `nextjs`                | Next.js + Prettier                  |
 
 ## Exported Utilities
 
