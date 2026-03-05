@@ -63,4 +63,4 @@ jobs:
         run: bun run test
 
       - name: Publish to npm with provenance
-        run: bun publish --access public --ignore-scripts
+        run: npm publish --access public --ignore-scripts
