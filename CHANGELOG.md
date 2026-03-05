@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.10](https://github.com/Garcia-Ventures/eslint-config/compare/eslint-config-v0.1.9...eslint-config-v0.1.10) (2026-03-05)
+
+
+### Features
+
+* Add ESLint configuration and integrate unused imports plugin ([9060de5](https://github.com/Garcia-Ventures/eslint-config/commit/9060de5c9b5d14b4e79b83eb85ebd11634e63d21))
+
 ## [0.1.9](https://github.com/Garcia-Ventures/eslint-config/compare/eslint-config-v0.1.8...eslint-config-v0.1.9) (2026-03-05)
 
 
