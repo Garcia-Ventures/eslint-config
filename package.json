@@ -42,7 +42,7 @@
     "prepare": "husky",
     "test": "bun run test:unit && node test/verify.mjs",
     "test:unit": "node test/unit.test.mjs",
-    "validate": "bun run lint && bun run test && bun x publint"
+    "validate": "bun run lint && bun run test && bun x publint --pack bun"
   },
   "lint-staged": {
     "*.(js|ts|mjs|cjs)?(x)": [
