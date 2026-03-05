@@ -16,8 +16,8 @@ updates:
   #   schedule:
   #     interval: "monthly"
 
-  # Enable version updates for npm
-  - package-ecosystem: "npm"
+  # Enable version updates for bun
+  - package-ecosystem: "bun"
     directory: "/"
     schedule:
       interval: "monthly"
