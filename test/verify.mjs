@@ -21,7 +21,7 @@ function verifyFixture(fixtureName, options = {}) {
 
   try {
     // Run eslint from the root package's node_modules but using the fixture's config
-    const cmd = `yarn eslint . --config eslint.config.mjs --no-ignore`;
+    const cmd = `bun x eslint . --config eslint.config.mjs --no-ignore`;
     const output = execSync(cmd, {
       cwd: fixturePath,
       encoding: 'utf8',

@@ -37,12 +37,12 @@
     "format": "prettier --write .",
     "format:ci": "prettier --check .",
     "lint": "eslint . --cache",
-    "lint:fix": "yarn lint --fix",
+    "lint:fix": "bun run lint --fix",
     "lint:report": "eslint . --cache -o ./eslintReport.html -f html",
     "prepare": "husky",
-    "test": "yarn test:unit && node test/verify.mjs",
+    "test": "bun run test:unit && node test/verify.mjs",
     "test:unit": "node test/unit.test.mjs",
-    "validate": "yarn lint && yarn test && yarn dlx publint"
+    "validate": "bun run lint && bun run test && bun x publint"
   },
   "lint-staged": {
     "*.(js|ts|mjs|cjs)?(x)": [
@@ -55,26 +55,21 @@
   },
   "prettier": "@eng618/prettier-config",
   "dependencies": {
-    "@eslint/js": "^9.0.0",
-    "eslint-config-prettier": "^10.0.0",
-    "eslint-plugin-prettier": "^5.0.0",
-    "globals": ">=15.0.0",
-    "typescript-eslint": "^8.0.0"
-  },
-  "devDependencies": {
-    "@eng618/prettier-config": "^2.6.0",
     "@eslint/js": "^10.0.1",
-    "@gv-tech/eslint-config": "^0.1.0",
-    "@next/eslint-plugin-next": "^16.1.6",
-    "eslint": "^10.0.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.5",
     "globals": "^17.3.0",
+    "typescript-eslint": "^8.54.0"
+  },
+  "devDependencies": {
+    "@eng618/prettier-config": "^2.6.0",
+    "@gv-tech/eslint-config": "^0.1.0",
+    "@next/eslint-plugin-next": "^16.1.6",
+    "eslint": "^10.0.0",
     "husky": "^9.1.7",
     "lint-staged": "^16.2.7",
     "prettier": "^3.8.1",
-    "typescript": "^5.9.3",
-    "typescript-eslint": "^8.54.0"
+    "typescript": "^5.9.3"
   },
   "peerDependencies": {
     "@eng618/prettier-config": "^2.0.0",
