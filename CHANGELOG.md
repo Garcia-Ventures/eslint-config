@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.13](https://github.com/Garcia-Ventures/eslint-config/compare/eslint-config-v0.1.12...eslint-config-v0.1.13) (2026-03-05)
+
+
+### Documentation
+
+* Update README.md for improved structure and clarity ([99cf1c9](https://github.com/Garcia-Ventures/eslint-config/commit/99cf1c9eb827d91a209b926c6ce764ca6d5fc4c2))
+
 ## [0.1.12](https://github.com/Garcia-Ventures/eslint-config/compare/eslint-config-v0.1.11...eslint-config-v0.1.12) (2026-03-05)
 
 
