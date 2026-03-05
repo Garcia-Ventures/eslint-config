@@ -18,9 +18,8 @@ try {
   const mod = await import('@next/eslint-plugin-next');
   nextPlugin = mod.default;
 } catch {
-  if (process.env.ESLINT_CONFIG_FORCE_MISSING_NEXT !== 'true') {
-    console.warn("Next.js plugin not found. It's optional.");
-  }
+  // Silent catch. If the plugin is missing, we use a placeholder that informs
+  // the user if they actually try to use these rules.
 }
 
 /** Next.js specific ignore patterns */
