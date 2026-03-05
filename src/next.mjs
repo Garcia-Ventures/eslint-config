@@ -22,10 +22,16 @@ try {
   // the user if they actually try to use these rules.
 }
 
-/** Next.js specific ignore patterns */
+/**
+ * Next.js specific ignore patterns
+ * @type {string[]}
+ */
 export const nextIgnores = [...commonIgnores, '.next/**', 'out/**', 'next-env.d.ts'];
 
-/** Next.js ESLint configuration. Extends TypeScript configuration and adds Next.js-specific rules. */
+/**
+ * Next.js ESLint configuration. Extends TypeScript configuration and adds Next.js-specific rules.
+ * @type {import('eslint').Linter.Config[]}
+ */
 export const next = nextPlugin
   ? [
       // Global ignores including Next.js specific
@@ -66,8 +72,9 @@ export const next = nextPlugin
     ];
 
 /**
- * Recommended configuration for Next.js projects with Prettier. Combines Next.js (which includes TypeScript) and
- * Prettier configurations.
+ * Recommended configuration for Next.js projects with Prettier.
+ * Combines Next.js (which includes TypeScript) and Prettier configurations.
+ * @type {import('eslint').Linter.Config[]}
  */
 export const nextjs = [...next, ...prettier];
 

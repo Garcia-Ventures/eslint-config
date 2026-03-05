@@ -7,10 +7,18 @@
 import tseslint from 'typescript-eslint';
 import { base, commonIgnores, jsFiles } from './base.mjs';
 
-/** File patterns for TypeScript files */
+/**
+ * File patterns for TypeScript files
+ *
+ * @type {string[]}
+ */
 export const tsFiles = ['**/*.ts', '**/*.tsx', '**/*.mts', '**/*.cts'];
 
-/** All JavaScript and TypeScript file patterns */
+/**
+ * All JavaScript and TypeScript file patterns
+ *
+ * @type {string[]}
+ */
 export const allJsTsFiles = [...jsFiles, ...tsFiles];
 
 /**
@@ -24,6 +32,8 @@ export const allJsTsFiles = [...jsFiles, ...tsFiles];
  *
  * export default [...typescript];
  * ```
+ *
+ * @type {import('eslint').Linter.Config[]}
  */
 export const typescript = [
   // Global ignores
@@ -37,6 +47,12 @@ export const typescript = [
     ...config,
     files: tsFiles,
   })),
+  {
+    files: tsFiles,
+    rules: {
+      '@typescript-eslint/no-unused-vars': 'off',
+    },
+  },
   // Ensure JS files still get base rules
   {
     files: jsFiles,

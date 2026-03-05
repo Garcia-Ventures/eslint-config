@@ -21,6 +21,8 @@ import { allJsTsFiles } from './typescript.mjs';
  *
  * export default [...typescript, ...prettier];
  * ```
+ *
+ * @type {import('eslint').Linter.Config[]}
  */
 export const prettier = [
   // Disable ESLint rules that conflict with Prettier

@@ -13,14 +13,26 @@ import { allJsTsFiles, tsFiles, typescript } from './typescript.mjs';
 // Re-export individual configurations
 export { allJsTsFiles, base, commonIgnores, jsFiles, next, nextIgnores, nextjs, prettier, tsFiles, typescript };
 
-/** Recommended configuration for TypeScript projects with Prettier. Combines TypeScript and Prettier configurations. */
+/**
+ * Recommended configuration for TypeScript projects with Prettier. Combines TypeScript and Prettier configurations.
+ *
+ * @type {import('eslint').Linter.Config[]}
+ */
 export const recommended = [...typescript, ...prettier];
 
-/** Base configuration preset for simple JavaScript projects. */
+/**
+ * Base configuration preset for simple JavaScript projects.
+ *
+ * @type {import('eslint').Linter.Config[]}
+ */
 export const javascript = [...base];
 
-/** Recommended configuration for JavaScript projects with Prettier. */
+/**
+ * Recommended configuration for JavaScript projects with Prettier.
+ *
+ * @type {import('eslint').Linter.Config[]}
+ */
 export const javascriptRecommended = [...base, ...prettier];
 
-// Default export is the recommended TypeScript + Prettier config
+/** Default export is the recommended TypeScript + Prettier config */
 export default recommended;
