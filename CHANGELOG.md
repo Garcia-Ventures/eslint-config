@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.14](https://github.com/Garcia-Ventures/eslint-config/compare/eslint-config-v0.1.13...eslint-config-v0.1.14) (2026-03-05)
+
+
+### Features
+
+* Update common ignore patterns in base configuration ([afc46ca](https://github.com/Garcia-Ventures/eslint-config/commit/afc46ca29635b0ff54e807aa6b5aac7624527e26))
+
 ## [0.1.13](https://github.com/Garcia-Ventures/eslint-config/compare/eslint-config-v0.1.12...eslint-config-v0.1.13) (2026-03-05)
 
 
