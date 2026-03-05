@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.12](https://github.com/Garcia-Ventures/eslint-config/compare/eslint-config-v0.1.11...eslint-config-v0.1.12) (2026-03-05)
+
+
+### Bug Fixes
+
+* Change publish command from bun to npm in release workflow ([b20df91](https://github.com/Garcia-Ventures/eslint-config/commit/b20df917fcb37565cdd43cd6c7fdb5d94c065c52))
+
 ## [0.1.11](https://github.com/Garcia-Ventures/eslint-config/compare/eslint-config-v0.1.10...eslint-config-v0.1.11) (2026-03-05)
 
 
