@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.9](https://github.com/Garcia-Ventures/eslint-config/compare/eslint-config-v0.1.8...eslint-config-v0.1.9) (2026-03-05)
+
+
+### Features
+
+* **bun:** Migrate yarn to bun ([7d5b49d](https://github.com/Garcia-Ventures/eslint-config/commit/7d5b49db5749608f2c37ed8194e69f058c1332ad))
+
 ## [0.1.8](https://github.com/Garcia-Ventures/eslint-config/compare/eslint-config-v0.1.7...eslint-config-v0.1.8) (2026-02-08)
 
 
