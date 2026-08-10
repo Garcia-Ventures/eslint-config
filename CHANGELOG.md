@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.15](https://github.com/Garcia-Ventures/eslint-config/compare/eslint-config-v0.1.14...eslint-config-v0.1.15) (2026-08-10)
+
+
+### Bug Fixes
+
+* Force release of updated deps ([ec816e6](https://github.com/Garcia-Ventures/eslint-config/commit/ec816e6a4869a21ade68818a945fd30a9ef927fa))
+
 ## [0.1.14](https://github.com/Garcia-Ventures/eslint-config/compare/eslint-config-v0.1.13...eslint-config-v0.1.14) (2026-03-05)
 
 
